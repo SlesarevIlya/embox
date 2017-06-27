@@ -21,11 +21,7 @@ before_install:
   - travis_retry sudo apt-get update -qq
 
 # TODO make it template-specific
-install:
-  - travis_retry sudo apt-get install -qq gcc-arm-embedded
-  - travis_retry sudo apt-get install -qq gcc-multilib
-  - travis_retry sudo apt-get install -qq u-boot-tools
-  - travis_retry sudo apt-get install -qq qemu qemu-system
+install: ./scripts/continuous/install_travis.sh "$TEMPLATE"
 
 before_script:
   - unset CC
