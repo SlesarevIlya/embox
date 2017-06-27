@@ -1,8 +1,8 @@
 TEMPLATE="$1"
 
 packetdrill_run() {
-  travis_retry sudo apt-get install -qq gcc-arm-embedded
-  travis_retry sudo apt-get install -qq gcc-multilib
-  travis_retry sudo apt-get install -qq u-boot-tools
-  travis_retry sudo apt-get install -qq qemu qemu-system
+  apt-get install -qq gcc-arm-embedded
+  apt-get install -qq gcc-multilib
+  apt-get install -qq u-boot-tools
+  apt-get install -qq qemu qemu-system
 }
