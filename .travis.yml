@@ -22,7 +22,7 @@ before_install:
 
 # TODO make it template-specific
 install:
-  - run ./scripts/continuous/install_travis.sh "$TEMPLATE"
+  - run ./scripts/continuous/install_travis.sh
 
 before_script:
   - unset CC
