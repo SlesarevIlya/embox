@@ -17,9 +17,9 @@ sparc/*)
   sudo apt-get install -qq sparc-elf-gcc
   ;;
 mipc/*)
-  sudo apt-get install --qq mipc-elf-gcc
+  sudo apt-get install -qq mipc-elf-gcc
   ;;
 ppc/*)
-  sudo apt-get install --qq ppc-elf-gcc
+  sudo apt-get install -qq ppc-elf-gcc
   ;;
 esac
