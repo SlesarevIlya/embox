@@ -3,7 +3,7 @@ TEMPLATE="$1"
 if [ $TEMPLATE == arm/qemu ]
 then
   sudo apt-get install -qq gcc-arm-embedded  
-
+  sudo apt-get install -qq qemu qemu-system
 
 fi
 
