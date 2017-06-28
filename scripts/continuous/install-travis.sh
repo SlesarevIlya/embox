@@ -1,5 +1,6 @@
 TEMPLATE="$1"
-if [TEMPLATE == arm/qemu]
+
+if [ TEMPLATE == "arm/qemu" ]
 then
   sudo apt-get install -qq gcc-arm-embedded  
   sudo apt-get install -qq gcc-multilib
@@ -7,7 +8,7 @@ then
   sudo apt-get install -qq qemu qemu-system
 fi
 
-if [TEMPLATE == arm/stm32_f4]
+if [ TEMPLATE == "arm/stm32_f4" ]
 then
   sudo apt-get install -qq gcc-arm-embedded  
   sudo apt-get install -qq gcc-multilib
@@ -15,7 +16,7 @@ then
   sudo apt-get install -qq qemu qemu-system
 fi
 
-if [TEMPLATE == x86/qemu]
+if [ TEMPLATE == "x86/qemu" ]
 then
   sudo apt-get install -qq gcc-arm-embedded  
   sudo apt-get install -qq gcc-multilib
@@ -23,7 +24,7 @@ then
   sudo apt-get install -qq qemu qemu-system
 fi
 
-if [TEMPLATE == x86/test/lang]
+if [ TEMPLATE == "x86/test/lang" ]
 then
   sudo apt-get install -qq gcc-arm-embedded  
   sudo apt-get install -qq gcc-multilib
