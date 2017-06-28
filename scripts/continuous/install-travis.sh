@@ -11,6 +11,6 @@ x86/*)
   sudo apt-get install -qq qemu qemu-system
   ;;
 microblaze/*)
-  sudo apt-get install -qq qemu-system-microblaze
+  sudo apt-get install -qq qemu qemu-system-microblaze
   ;;
 esac
