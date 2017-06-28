@@ -5,9 +5,7 @@ arm/*)
   sudo apt-get install -qq gcc-arm-embedded  
   sudo apt-get install -qq qemu qemu-system
   ;;
-ecas
-
-
+esac
 
 if [ $TEMPLATE == x86/qemu ]
 then
