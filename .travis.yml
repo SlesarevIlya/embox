@@ -12,9 +12,7 @@ env:
     - AUTOQEMU_NICS=''
   matrix:
     - TEMPLATE=arm/qemu
-    - TEMPLATE=arm/stm32_f4
-    - TEMPLATE=x86/qemu
-    - TEMPLATE=x86/test/lang
+
 
 before_install:
   - travis_retry sudo add-apt-repository -y ppa:team-gcc-arm-embedded/ppa
