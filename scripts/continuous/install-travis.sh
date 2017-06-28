@@ -10,4 +10,7 @@ x86/*)
   sudo apt-get install -qq gcc-multilib
   sudo apt-get install -qq qemu qemu-system
   ;;
+microblaze/*)
+  sudo apt-get install -qq microblaze-elf-gcc
+  ;;
 esac
