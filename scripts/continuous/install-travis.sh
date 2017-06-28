@@ -15,7 +15,3 @@ if [ $TEMPLATE == x86/qemu ]
 then
   sudo apt-get install -qq qemu qemu-system
 fi
-
-if [ $TEMPLATE == x86/test/lang ]
-then
-fi
