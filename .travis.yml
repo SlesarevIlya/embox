@@ -11,10 +11,15 @@ env:
     - secure: KKhG29VpIOr5mq9xHptpDSfFEcSRKB8BX4e5zL0VQNJGkrNAHJ7ba+boHKEmSJJ1fZvHC18XOb886BIsn0i+lFrVymYDR8L8ca3e/k26LktnqMn76ORK1WYkD1fiRg3lX25v/j0TkoLB7pmDnMhZyGzg20675V1sHbl/KCO1LJI=
     - AUTOQEMU_NICS=''
   matrix:
-    - TEMPLATE=arm/qemu
-    - TEMPLATE=arm/stm32_f4
-    - TEMPLATE=x86/qemu
-    - TEMPLATE=x86/test/lang
+    - TEMPLATE=x86/smp
+    - TEMPLATE=x86/test/fs
+    - TEMPLATE=x86/test/net
+    - TEMPLATE=x86/test/packetdrill
+    - TEMPLATE=sparc/debug
+    - TEMPLATE=mips/debug
+    - TEMPLATE=ppc/debug
+    - TEMPLATE=microblaze/petalogix
+    - TEMPLATE=usermode86/debug
 
 before_install:
   - travis_retry sudo add-apt-repository -y ppa:team-gcc-arm-embedded/ppa
