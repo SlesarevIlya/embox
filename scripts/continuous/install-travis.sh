@@ -15,7 +15,7 @@ microblaze/*)
   tar axf microblaze-elf-toolchain.tar.bz2
   export PATH=$PATH:microblaze-elf-toolchain/bin
   ;;
-sparc/*)
+sparc/debug)
   wget https://github.com/embox/crosstool/releases/download/2.28-6.3.0-7.12/sparc-elf-toolchain.tar.bz2
   tar axf sparc-elf-toolchain.tar.bz2
   export PATH=$PATH:sparc-elf-toolchain/bin
