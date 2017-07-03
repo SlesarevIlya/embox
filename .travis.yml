@@ -31,7 +31,9 @@ before_install:
   - travis_retry sudo apt-get update -qq
 
 # TODO make it template-specific
-install: ./scripts/continuous/install-travis.sh "$TEMPLATE"
+install: 
+  - export PATH
+  - ./scripts/continuous/install-travis.sh "$TEMPLATE"
 
 before_script:
   - unset CC
